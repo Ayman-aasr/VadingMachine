@@ -1,0 +1,66 @@
+RefillBalance();
+GetSnackStock();
+btnSnackItemSelected_Click->
+  {
+  //check if the snack have avalabile item then
+   selectedSnackitem;
+  
+  }
+
+
+btnMoneySlot_Click->
+   if(isCoinButton)
+     {
+      if(IsValidCurancy(string _coin.Currency))
+            {
+                updateMoneySlotBalance();
+                updateCurrentBalance();
+            }
+     
+     //else do nothing and alert with missing.
+     }
+     else if(button clicked related to Note Solt)
+         {
+         if(IsValidCurancy(string _note.Currency))
+            {
+                updateMoneySlotBalance();
+                updateCurrentBalance();
+            }
+            //else do nothing and alert with missing.
+         }
+           
+            
+
+btnConfirm_Click->
+            if(acceptMoney && availableItems>0)
+            {
+                if(payWithCard.Checked)
+                {
+                    purchase(int row,int col);
+                    updateBalance();
+                    updateStock();
+                    returnChange();
+                    clearMoneySlot();
+
+                }
+                 //else do nothing and alert with missing.
+
+                 if(payWithCard.Checked)
+                 {
+                     PurchaseWithCard(by ref item);
+                         UpdateBalance();
+                         ReturnChange();
+                        ClearMoneySlot();
+                     UpdateSnackList();
+                     UpdateStatus();
+                     DrawSnackSoketinMachine();
+                 }
+                 //else do nothing and alert with missing.
+
+            }
+
+btnEndCancel_Click->
+            ReturnMoney();
+            cleanMoneySlot();
+            cleanFields();
+

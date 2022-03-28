@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/VendingMacine/obj/Debug
+/VendingMacine/bin/Debug
+/.vs/VendingMacine/v16/TestStore/0/testlog.manifest
+/.vs/VendingMacine/v16/TestStore/0/000.testlog
+/.vs/VendingMacine/v16/.suo
